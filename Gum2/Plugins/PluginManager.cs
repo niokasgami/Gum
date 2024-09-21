@@ -398,7 +398,6 @@ namespace Gum.Plugins
                 string executablePath = FileManager.GetDirectory(Process.GetCurrentProcess().MainModule!.FileName);
                 //FileManager.GetDirectory(System.Windows.Forms.Application.ExecutablePath);
 
-                dllFiles.Add(executablePath + "Gum.exe");
                 foreach (string dll in dllFiles)
                 {
                     try
@@ -415,7 +414,7 @@ namespace Gum.Plugins
                 }
             }
 
-            if (mGlobal)
+            //if (mGlobal)
             {
                 returnValue.Catalogs.Add(new AssemblyCatalog(System.Reflection.Assembly.GetExecutingAssembly()));
             }

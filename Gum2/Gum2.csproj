@@ -25,8 +25,4 @@
     <ProjectReference Include="..\MonoGameGum\MonoGameGum.csproj" />
     <ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesNet.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Plugins\" />
-  </ItemGroup>
 </Project>
