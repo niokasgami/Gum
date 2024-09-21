@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="250"
+             x:Class="Gum2.UserControl1"
+			 xmlns:ViewModels="clr-namespace:Gum2.Plugins.MvvmExamplePlugin.ViewModels;assembly=Gum2"
+			 x:DataType="ViewModels:MainViewModel"
+			 >
+	<Grid ColumnDefinitions="*,*" 
+		  RowDefinitions="auto,auto,auto, auto">
+
+		<Label Content="Name:"></Label>
+		<TextBox Grid.Column="1" x:Name="NameTextBox" 
+				 Text="{Binding Name}"
+				 IsEnabled="{Binding IsUiEnabled}"></TextBox>
+
+		<Label Grid.Row="1" Content="Defined by base:"></Label>
+		<CheckBox Grid.Row="1" Grid.Column="1" 
+				  IsChecked="{Binding IsDefinedByBase}"
+				  IsEnabled="{Binding IsUiEnabled}"></CheckBox>
+		<Label Grid.Row="2" Content="Locked:"></Label>
+		<CheckBox Grid.Row="2" Grid.Column="1" 
+				  IsChecked="{Binding IsLocked}"
+				  ></CheckBox>
+		<Button Grid.Row="3" Content="Clear All" Click="Button_Click"></Button>
+	</Grid>
+</UserControl>
