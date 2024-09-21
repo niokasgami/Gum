@@ -32,7 +32,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesStandard.csproj" />
+	  <ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesNet.csproj" />
 	</ItemGroup>
 
 </Project>
