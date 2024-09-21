@@ -90,7 +90,6 @@
 		<ProjectReference Include="..\..\fna\FNA.Core.csproj" />
 		<ProjectReference Include="..\..\GumCommon\GumCommon.csproj" />
 		<ProjectReference Include="..\..\GumDataTypes\GumDataTypesNet6.csproj" />
-		<ProjectReference Include="..\..\ToolsUtilities\ToolsUtilitiesStandard.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
