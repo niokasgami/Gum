@@ -6,4 +6,5 @@
         x:Class="Gum2.MainWindow"
         Title="Gum2">
     Welcome to Avalonia!
+	
 </Window>
