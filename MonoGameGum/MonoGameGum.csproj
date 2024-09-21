@@ -87,7 +87,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\GumCommon\GumCommon.csproj" />
 		<ProjectReference Include="..\GumDataTypes\GumDataTypesNet6.csproj" />
-		<ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesStandard.csproj" />
+		<ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesNet.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
