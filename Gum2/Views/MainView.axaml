@@ -6,10 +6,26 @@
              x:Class="Gum2.Views.MainView">
 	<Grid ColumnDefinitions="*, 4, *, 4, *">
 		<GridSplitter Grid.Column="1" Background="LightGray" ResizeDirection="Columns"/>
-
 		<GridSplitter Grid.Column="3" Background="LightGray" ResizeDirection="Columns"/>
+		<TabControl x:Name="LeftTabControl">
+		</TabControl>
+		<Grid Grid.Column="2" RowDefinitions="*,4,*">
+			<TabControl x:Name="MiddleTopTabControl">
+			</TabControl>
+			<GridSplitter Grid.Row="1" Background="LightGray" ResizeDirection="Rows"/>
+			<TabControl Grid.Row="2" x:Name="MiddleBottomTabControl">
+			</TabControl>
+		</Grid>
+
+		<Grid Grid.Column="4" RowDefinitions="*,4,*">
+			<TabControl x:Name="RightTopTabControl">
+			</TabControl>
+			<GridSplitter Grid.Row="1" Background="LightGray" ResizeDirection="Rows"/>
+			<TabControl Grid.Row="2" x:Name="RightBottomTabControl"/>
+		</Grid>
 		
 	</Grid>
-  
+
+
   
 </UserControl>
