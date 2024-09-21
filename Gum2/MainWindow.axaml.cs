@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Gum.Plugins;
 
 namespace Gum2
 {
@@ -7,6 +8,9 @@ namespace Gum2
         public MainWindow()
         {
             InitializeComponent();
+
+            PluginManager.Self.Initialize();
+
         }
     }
 }

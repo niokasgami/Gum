@@ -15,6 +15,7 @@ using System.Runtime.CompilerServices;
 using Gum.Wireframe;
 using Avalonia;
 using System.Composition;
+using System.Diagnostics;
 
 namespace Gum.Plugins
 {
@@ -55,7 +56,9 @@ namespace Gum.Plugins
         {
             get
             {
-                throw new NotImplementedException();
+                //throw new NotImplementedException();
+                return FileManager.GetDirectory(Process.GetCurrentProcess().MainModule!.FileName) + "Plugins\\";
+
                 //return FileManager.GetDirectory(Application.Current.ExecutablePath) + "Plugins\\";
             }
         }
@@ -171,9 +174,11 @@ namespace Gum.Plugins
             // because if we don't, then Glue looks for them in the Startup
             // path, which could depend on whether Glue is launched from a shortcut
             // or not - this is really common for released versions.
-                throw new NotImplementedException();
-            string executablePath = "todo";
+                //throw new NotImplementedException();
                 //FileManager.GetDirectory(System.Windows.Forms.Application.ExecutablePath);
+
+            var executablePath =
+                FileManager.GetDirectory( Process.GetCurrentProcess().MainModule?.FileName);
 
             //Load Internal List
             mReferenceListInternal.Add(executablePath + "Ionic.Zip.dll");
@@ -390,8 +395,7 @@ namespace Gum.Plugins
             foreach (var directory in pluginDirectories)
             {
                 List<string> dllFiles = FileManager.GetAllFilesInDirectory(directory, "dll");
-                string executablePath = "";
-                throw new NotImplementedException();
+                string executablePath = FileManager.GetDirectory(Process.GetCurrentProcess().MainModule!.FileName);
                 //FileManager.GetDirectory(System.Windows.Forms.Application.ExecutablePath);
 
                 dllFiles.Add(executablePath + "Gum.exe");
