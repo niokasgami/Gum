@@ -19,7 +19,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GumCommon\GumCommon.csproj" />
+    <ProjectReference Include="..\GumDataTypes\GumDataTypesNet6.csproj" />
     <ProjectReference Include="..\GumRuntimeNet6\GumRuntimeNet6.csproj" />
     <ProjectReference Include="..\MonoGameGum\MonoGameGum.csproj" />
+    <ProjectReference Include="..\ToolsUtilities\ToolsUtilitiesNet.csproj" />
   </ItemGroup>
 </Project>
