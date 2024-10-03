@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="clr-namespace:Gum2.Plugins.MonoGamePlugin.ViewModels"
+			 xmlns:mg="clr-namespace:MonoGame.Avalonia.Controls;assembly=MonoGame.Avalonia"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Gum2.MonoGameView"
+			 x:DataType="vm:MonoGameViewModel">
+<Design.DataContext>
+	<vm:MonoGameViewModel/>
+</Design.DataContext>
+	<mg:MonoGameControl Game="{Binding Game}"
+							  BackBufferWidth="1920"
+							  BackBufferHeight="1080"
+							  IsPaused="False"/>
+</UserControl>

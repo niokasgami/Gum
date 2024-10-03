@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gum2", "Gum2.csproj", "{F1EE160A-CA16-4DDD-BFCE-80CE989B0938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gum2", "Gum2.csproj", "{F1EE160A-CA16-4DDD-BFCE-80CE989B0938}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{31FF44BD-8E20-4551-BE96-5D5DA2EFDA65}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsUtilitiesNet", "..\ToolsUtilities\ToolsUtilitiesNet.csproj", "{3D8D24FE-1227-4C65-A201-9B913C133C28}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GumDataTypesNet6", "..\GumDataTypes\GumDataTypesNet6.csproj", "{D24E2A74-109F-4376-ABEB-29C8EDE6356B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameRenderer", "..\MonoGameRenderer\MonoGameRenderer.csproj", "{1049DC2F-2A05-420A-AA62-71A0639E28C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,14 @@ Global
 		{D24E2A74-109F-4376-ABEB-29C8EDE6356B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D24E2A74-109F-4376-ABEB-29C8EDE6356B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D24E2A74-109F-4376-ABEB-29C8EDE6356B}.Release|x86.Build.0 = Release|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Debug|x86.Build.0 = Debug|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Release|x86.ActiveCfg = Release|Any CPU
+		{1049DC2F-2A05-420A-AA62-71A0639E28C0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
